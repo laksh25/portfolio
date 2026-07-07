@@ -2,20 +2,21 @@ export const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export const HERO_ROLES = [
-  "Senior Full-Stack Engineer",
-  "Frontend Architecture Lead",
-  "React / Next.js Specialist",
+  "Senior Frontend Engineer",
+  "Full-Stack Capable Engineer",
+  "React / Next.js Architect",
   "Design Systems Engineer",
-  "TypeScript Advocate",
+  "Performance & Accessibility Advocate",
 ];
 
 export const HERO_STATS = [
   { num: "5+", label: "Years exp." },
-  { num: "500+", label: "Users served" },
-  { num: "3000+", label: "Extension downloads" },
+  { num: "40%", label: "Faster page loads" },
+  { num: "3,000+", label: "Extension downloads" },
 ];
 
 export const SKILLS = [
@@ -23,16 +24,36 @@ export const SKILLS = [
     category: "Frontend",
     accent: "var(--accent2)",
     items: [
-      { label: "React", primary: true },
-      { label: "Next.js", primary: true },
+      { label: "React.js", primary: true },
+      { label: "Next.js (SSR/ISR/SSG, App Router)", primary: true },
       { label: "TypeScript", primary: true },
+      { label: "JavaScript (ES6+)", primary: false },
+      { label: "Redux / Context API", primary: false },
       { label: "Tailwind CSS", primary: false },
-      { label: "Framer Motion", primary: false },
-      { label: "Redux", primary: false },
-      { label: "Zustand", primary: false },
-      { label: "React Query", primary: false },
+      { label: "Material UI", primary: false },
+      { label: "HTML5 / CSS3", primary: false },
+      { label: "Component Architecture", primary: false },
+      { label: "Micro-Frontend Architecture", primary: false },
+      {
+        label: "Web Performance (Web Vitals: LCP, FID/INP, CLS)",
+        primary: false,
+      },
+      { label: "Accessibility (WCAG 2.1 AA, ARIA)", primary: false },
       { label: "Jest", primary: false },
       { label: "React Testing Library", primary: false },
+    ],
+  },
+  {
+    category: "Design Systems & Tooling",
+    accent: "var(--accent2)",
+    items: [
+      { label: "Storybook", primary: true },
+      { label: "Atomic Design", primary: false },
+      { label: "Figma (Design-to-Code Handoff)", primary: false },
+      { label: "Webpack", primary: false },
+      { label: "Vite", primary: false },
+      { label: "Babel", primary: false },
+      { label: "Module Federation", primary: false },
     ],
   },
   {
@@ -42,31 +63,54 @@ export const SKILLS = [
       { label: "Node.js", primary: true },
       { label: "Nest.js", primary: false },
       { label: "GraphQL", primary: false },
-      { label: "PostgreSQL", primary: false },
-      { label: "MongoDB", primary: false },
-      { label: "Redis", primary: false },
       { label: "REST APIs", primary: false },
     ],
   },
   {
-    category: "Infrastructure",
+    category: "Databases & Caching",
     accent: "var(--accent2)",
     items: [
-      { label: "AWS", primary: false },
-      { label: "Vercel", primary: false },
+      { label: "PostgreSQL", primary: false },
+      { label: "MongoDB", primary: false },
+      { label: "Redis", primary: false },
+    ],
+  },
+  {
+    category: "Cloud & DevOps",
+    accent: "var(--accent2)",
+    items: [
+      { label: "AWS Lambda", primary: false },
+      { label: "AWS ECS", primary: false },
+      { label: "AWS EC2", primary: false },
+      { label: "SQS / SNS", primary: false },
+      { label: "S3", primary: false },
+      { label: "API Gateway", primary: false },
+      { label: "CloudWatch", primary: false },
       { label: "Docker", primary: false },
-      { label: "GitHub Actions", primary: false },
+      { label: "Kubernetes", primary: false },
+      { label: "GitHub Actions / CI/CD", primary: false },
       { label: "Terraform", primary: false },
+      { label: "Git", primary: false },
+    ],
+  },
+  {
+    category: "AI & Modern Dev",
+    accent: "var(--accent2)",
+    items: [
+      { label: "GitHub Copilot", primary: false },
+      { label: "Claude Code", primary: false },
+      { label: "Applied AI in Development", primary: false },
     ],
   },
   {
     category: "Soft Skills",
     accent: "var(--accent2)",
     items: [
-      { label: "Ownership", primary: true },
-      { label: "Technical Leadership", primary: false },
-      { label: "Mentorship", primary: false },
+      { label: "Technical Leadership", primary: true },
+      { label: "Engineering Mentorship", primary: false },
       { label: "Cross-functional Collaboration", primary: false },
+      { label: "Ownership", primary: false },
+      { label: "Stakeholder Management", primary: false },
     ],
   },
 ];
@@ -74,18 +118,18 @@ export const SKILLS = [
 export const EXPERIENCE = [
   {
     period: "2026 — Present",
-    company: "Unthinkable Solutions",
+    company: "Unthinkable Solutions LLP",
     type: "Full-time",
     title: "Senior Associate Software Engineer",
-    desc: "Senior Full Stack Engineer and Tech Lead responsible for architecting scalable web applications, driving engineering best practices, mentoring developers, and delivering high-impact solutions for global clients.",
+    desc: "Senior Frontend-Focused Engineer and Tech Lead responsible for architecting scalable web applications, driving engineering best practices, mentoring developers, and delivering high-impact solutions for global clients across Healthcare, Analytics, and EdTech platforms.",
     achievements: [
       "Led end-to-end development of multiple client projects, translating business requirements into scalable and maintainable technical solutions",
-      "Designed and built reusable <strong>component libraries and shared modules</strong>, accelerating development velocity across engineering teams",
-      "Championed <strong>SOLID principles, clean architecture, and design patterns</strong> to improve code quality, maintainability, and scalability",
-      "Provided technical leadership through code reviews, architectural guidance, and engineering best practices",
+      "Designed and built a <strong>30+ component design system</strong>, following atomic design principles and documented in <strong>Storybook</strong>, accelerating development velocity and cutting per-feature UI build time across teams",
+      "Championed <strong>SOLID principles, clean architecture, and design patterns</strong>, including micro-frontend-ready module boundaries, to improve code quality, maintainability, and scalability",
+      "Ensured <strong>WCAG 2.1 AA accessibility compliance</strong> (semantic HTML, ARIA roles/labels, keyboard navigation, focus management) across shared design systems",
+      "Provided technical leadership through code reviews, architectural guidance, and Figma-to-code design handoff processes",
       "Mentored junior developers and conducted training programs for fresh graduates, helping accelerate onboarding and productivity",
       "Conducted technical interviews for both freshers and experienced candidates, contributing to engineering team growth",
-      "Collaborated closely with designers, product stakeholders, and developers to ensure transparent communication and successful project delivery",
       "Led rapid prototyping and MVP development initiatives, enabling clients to validate ideas and reduce time-to-market",
     ],
     tech: [
@@ -93,7 +137,7 @@ export const EXPERIENCE = [
       "Next.js",
       "TypeScript",
       "Node.js",
-      "Express.js",
+      "NestJS",
       "MongoDB",
       "PostgreSQL",
       "AWS",
@@ -102,18 +146,18 @@ export const EXPERIENCE = [
 
   {
     period: "2023 — 2026",
-    company: "Unthinkable Solutions",
+    company: "Unthinkable Solutions LLP",
     type: "Full-time",
     title: "Associate Software Engineer",
     desc: "Full Stack Developer and Team Lead responsible for building production-grade applications while driving code quality, reusability, and team collaboration.",
     achievements: [
-      "Delivered scalable frontend and backend solutions for client-facing products across multiple domains",
-      "Built reusable UI components and shared development patterns that improved consistency across projects",
+      "Cut initial page-load time by <strong>40%</strong> through code splitting, lazy loading, React.memo, and Webpack/Vite bundle optimization (tree-shaking, dependency auditing)",
+      "Adopted <strong>Next.js SSR/ISR</strong> for high-traffic content pages, improving SEO discoverability and perceived load performance over a pure client-side-rendered baseline",
+      "Built reusable UI components and shared development patterns that improved consistency and reuse across projects",
       "Introduced and advocated engineering standards focused on maintainability, scalability, and clean code practices",
       "Mentored junior team members through pair programming, technical guidance, and code reviews",
       "Participated in technical hiring processes, evaluating candidates across frontend and full-stack roles",
       "Worked closely with design and backend teams to ensure seamless implementation of complex product requirements",
-      "Identified and implemented appropriate architectural and design patterns based on project requirements",
     ],
     tech: [
       "React",
@@ -121,7 +165,7 @@ export const EXPERIENCE = [
       "JavaScript",
       "TypeScript",
       "Node.js",
-      "Express.js",
+      "NestJS",
       "MongoDB",
       "REST APIs",
     ],
@@ -129,7 +173,7 @@ export const EXPERIENCE = [
 
   {
     period: "2022 — 2023",
-    company: "Unthinkable Solutions",
+    company: "Unthinkable Solutions LLP",
     type: "Full-time",
     title: "Junior Associate Software Engineer",
     desc: "Frontend Engineer focused on building performant and reusable user interfaces while collaborating closely with cross-functional teams.",
@@ -145,7 +189,7 @@ export const EXPERIENCE = [
 
   {
     period: "2021 — 2022",
-    company: "Unthinkable Solutions",
+    company: "Unthinkable Solutions LLP",
     type: "Internship",
     title: "Software Engineering Intern",
     desc: "Started my software engineering journey by building frontend features, learning modern development practices, and contributing to production applications.",
@@ -164,9 +208,12 @@ export const PROJECTS = [
     featured: true,
     badge: { label: "★ Featured", variant: "featured" as const },
     title: "Novadontics",
-    desc: "Healthcare appointment and tele-dentistry platform serving patients and providers across multiple locations. Led the architecture and development of the platform end-to-end, spanning scalable backend services, serverless workflows, real-time video consultations, payment processing, and provider management.\n\nBuilt a highly available cloud-native infrastructure on AWS with event-driven processing, automated appointment orchestration, internationalization support, and geolocation-powered provider discovery.",
+    desc: "Healthcare appointment and tele-dentistry platform serving patients and providers across multiple locations. Led the architecture and development of the platform end-to-end as Technical Lead — spanning the patient-facing booking UI, geolocation provider-discovery, PCI-compliant payment flows, Twilio-powered video consultations, and a scalable AWS backend.\n\nDrove full internationalization (English/Spanish) across the React front end and API layer, and architected an event-driven AWS backend (ECS, Lambda, Step Functions, API Gateway, CloudWatch) to serve high concurrency with zero downtime.",
     tech: [
       "React",
+      "TypeScript",
+      "Tailwind",
+      "Material UI",
       "Node.js",
       "NestJS",
       "PostgreSQL",
@@ -178,8 +225,6 @@ export const PROJECTS = [
       "S3",
       "API Gateway",
       "Twilio Video",
-      "Tailwind",
-      "Material UI",
     ],
     links: [
       {
@@ -199,9 +244,36 @@ export const PROJECTS = [
 
   {
     featured: false,
+    badge: { label: "▲ Scalable Architecture", variant: "oss" as const },
+    title: "Sparkl LMS",
+    desc: "Learning Management System built on React and Next.js (SSR/ISR). Architected the frontend from scratch as Technical Lead, establishing scalable component and state-management patterns — including micro-frontend-ready module boundaries — adopted across the team.\n\nBuilt a 30+ component, WCAG 2.1 AA-compliant design system documented in Storybook using atomic design principles, cut page-load time by 40% via code splitting and bundle optimization, and shipped a webcam-based assignment submission feature with in-browser image editing.",
+    tech: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vite",
+      "Webpack",
+      "Storybook",
+      "AWS S3",
+    ],
+    links: [
+      { label: "Project Overview", href: "#", icon: "external" as const },
+    ],
+    visual: "metrics" as const,
+    metrics: [
+      { val: "30+", label: "Design system components" },
+      { val: "40%", label: "Faster page loads", accent: "var(--accent2)" },
+      { val: "100%", label: "Feature ownership", accent: "var(--accent3)" },
+      { val: "WCAG 2.1 AA", label: "Accessibility compliant" },
+    ],
+  },
+
+  {
+    featured: false,
     badge: { label: "● Production", variant: "live" as const },
     title: "Segment Inspector - Twilio",
-    desc: "Chrome extension built for Twilio Segment that simplifies analytics debugging and event validation. Architected and shipped the product from zero to production as Technical Lead.\n\nImplemented real-time event inspection, user-trait exploration, and automated instrumentation detection, eliminating the need for manual network-tab debugging and significantly reducing integration turnaround time for engineering teams.",
+    desc: "Chrome extension built for Twilio Segment that simplifies analytics debugging and event validation. Architected and shipped the product from zero to production as Technical Lead.\n\nBuilt a real-time event-monitoring and user-trait exploration interface with auto-instrumentation detection, eliminating the need for manual network-tab debugging and significantly reducing integration turnaround time for engineering teams.",
     tech: [
       "React",
       "Node.js",
@@ -224,23 +296,27 @@ export const PROJECTS = [
       { val: "Real-time", label: "Event inspection", accent: "var(--accent3)" },
     ],
   },
+];
 
+export const EDUCATION = [
   {
-    featured: false,
-    badge: { label: "▲ Scalable Architecture", variant: "oss" as const },
-    title: "Sparkl LMS",
-    desc: "Learning Management System built using a modern React. Established the project's frontend architecture from scratch and defined scalable engineering patterns adopted across the team.\n\nDeveloped a reusable component library, optimized application performance, and delivered advanced features such as webcam-based assignment submissions with in-browser image editing.",
-    tech: ["React", "Next.js", "Tailwind CSS", "Vite", "AWS S3"],
-    links: [
-      { label: "Project Overview", href: "#", icon: "external" as const },
-    ],
-    visual: "metrics" as const,
-    metrics: [
-      { val: "30+", label: "Shared components" },
-      { val: "40%", label: "Faster page loads", accent: "var(--accent2)" },
-      { val: "100%", label: "Feature ownership", accent: "var(--accent3)" },
-      { val: "MVP", label: "Architecture from scratch" },
-    ],
+    degree: "Master of Computer Applications (MCA)",
+    school:
+      "Bharati Vidyapeeth's Institute of Computer Applications and Management, Delhi",
+    period: "2020 — 2022",
+  },
+  {
+    degree: "B.Sc (Honours) in Computer Science",
+    school: "Sri Guru Gobind Singh College of Commerce, Delhi",
+    period: "2017 — 2020",
+  },
+];
+
+export const AWARDS = [
+  {
+    title: '"New Star on the Block"',
+    org: "Unthinkable Solutions LLP",
+    desc: "Recognised for consistently delivering high-quality projects, driving initiatives beyond assigned scope, and strengthening the engineering team by conducting technical hiring interviews.",
   },
 ];
 
@@ -293,8 +369,14 @@ export const CONTACT_LINKS = [
   {
     icon: "✉️",
     label: "Email",
-    value: "laksh25ay@gmail.com",
-    href: "mailto:laksh25ay@gmail.com",
+    value: "lakshay250407@gmail.com",
+    href: "mailto:lakshay250407@gmail.com",
+  },
+  {
+    icon: "📞",
+    label: "Phone",
+    value: "+91 9582963105",
+    href: "tel:+919582963105",
   },
   {
     icon: "💼",

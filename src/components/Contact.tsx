@@ -178,7 +178,7 @@ export default function Contact() {
               Send me an email
             </a>
             <a
-              href="https://drive.google.com/file/d/1eYqysuEmCzz0roTnxURWndq_PpyFd3Ha/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1GpDzjgOjSX03IUZiSfp26Rxl_Yk2XmiL/view?usp=sharing"
               target="_blank"
               style={{
                 padding: "14px 32px",
