@@ -373,12 +373,6 @@ export const CONTACT_LINKS = [
     href: "mailto:lakshay250407@gmail.com",
   },
   {
-    icon: "📞",
-    label: "Phone",
-    value: "+91 9582963105",
-    href: "tel:+919582963105",
-  },
-  {
     icon: "💼",
     label: "LinkedIn",
     value: "/in/lakshay-gupta",

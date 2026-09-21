@@ -177,33 +177,6 @@ export default function Contact() {
             >
               Send me an email
             </a>
-            <a
-              href="https://drive.google.com/file/d/1GpDzjgOjSX03IUZiSfp26Rxl_Yk2XmiL/view?usp=sharing"
-              target="_blank"
-              style={{
-                padding: "14px 32px",
-                background: "transparent",
-                color: "var(--text)",
-                border: "1px solid var(--border2)",
-                borderRadius: "4px",
-                fontSize: "14px",
-                fontWeight: 500,
-                textDecoration: "none",
-                transition: "all 0.2s",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = "var(--accent2)";
-                e.currentTarget.style.color = "var(--accent2)";
-                e.currentTarget.style.transform = "translateY(-1px)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = "var(--border2)";
-                e.currentTarget.style.color = "var(--text)";
-                e.currentTarget.style.transform = "none";
-              }}
-            >
-              Download resume
-            </a>
           </div>
         </div>
       </FadeIn>
